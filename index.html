@@ -5,16 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create New Wallet</title>
+
+    <link rel="stylesheet" href="pico.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <p id="walletAddress"></p>
+    <main class="container">
+      <article>
+        <div class="wallet-address">
+          <div id="qrcode"></div>
+          <div class="wallet-address_details">
+            <h2>Wallet address</h2>
+            <p id="walletAddress"></p>
+          </div>
+        </div>
+        <small>Mnemonic phrase</small>
         <p id="walletMnemonic"></p>
+        <small>Private key</small>
         <p id="walletPrivateKey"></p>
-      </div>
+      </article>
     </main>
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="qrcode.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+article {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+small {
+  opacity: 0.4;
+}
+
+.wallet-address {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.wallet-address_details {
+  padding-left: 1rem;
+}
+
+#walletAddress {
+}
+
+#walletMnemonic {
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #11191e;
+  border-radius: 0.25rem;
+}
+
+#walletPrivateKey {
+  font-family: monospace;
+  padding: 0.5rem;
+  background-color: #11191e;
+  border-radius: 0.25rem;
+}

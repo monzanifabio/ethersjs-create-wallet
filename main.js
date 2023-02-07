@@ -1,3 +1,8 @@
+window.onload = function () {
+  document.getElementById("loadingContainer").hidden = true;
+  document.getElementById("walletContainer").hidden = false;
+};
+
 const wallet = ethers.Wallet.createRandom();
 
 console.log("address:", wallet.address);

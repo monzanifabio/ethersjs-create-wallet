@@ -11,7 +11,10 @@
   </head>
   <body>
     <main class="container">
-      <article>
+      <article id="loadingContainer" aria-busy="true">
+        <p>Generating a new wallet...</p>
+      </article>
+      <article id="walletContainer" hidden>
         <div class="wallet-address">
           <div id="qrcode"></div>
           <div class="wallet-address_details">

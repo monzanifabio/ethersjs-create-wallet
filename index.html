@@ -30,7 +30,7 @@
         <small>Mnemonic phrase</small>
         <div class="wallet-mnemonic">
           <p id="walletMnemonic"></p>
-          <button id="btnCopyMnemonic" type="button">
+          <button id="btnCopyMnemonic" class="secondary" type="button">
             <img src="clipboard-copy.svg" width="24" height="24" alt="" />
             Copy to clipboard
           </button>
@@ -39,10 +39,24 @@
         <small>Private key</small>
         <div class="wallet-privatekey">
           <p id="walletPrivateKey"></p>
-          <button id="btnCopyPk" type="button">
+          <button id="btnCopyPk" class="secondary" type="button">
             <img src="clipboard-copy.svg" width="24" height="24" alt="" />
             Copy to clipboard
           </button>
+        </div>
+        <div class="grid">
+          <div>
+            <button id="downloadWallet" type="button">
+              <img src="download-file.svg" width="24" height="24" alt="" />
+              Download txt file
+            </button>
+          </div>
+          <div>
+            <button id="generateNew" type="button" class="outline">
+              <img src="stars.svg" width="24" height="24" alt="" />
+              Generate a new wallet
+            </button>
+          </div>
         </div>
       </article>
     </main>

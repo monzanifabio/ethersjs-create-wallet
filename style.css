@@ -22,6 +22,7 @@ a {
 article {
   padding: 1rem;
   border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 small {
@@ -77,6 +78,7 @@ button img {
 }
 
 .wallet-privatekey {
+  margin-bottom: 1rem;
   padding: 0.5rem;
   background-color: #11191e;
   border-radius: 0.25rem;
@@ -98,4 +100,8 @@ button img {
 
 .tooltip-body {
   display: flex;
+}
+
+.grid {
+  grid-template-columns: 1fr 1fr;
 }

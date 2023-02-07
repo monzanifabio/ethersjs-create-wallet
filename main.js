@@ -62,4 +62,10 @@ function downloadTextFile(text, fileName) {
   link.click();
 }
 
-// downloadTextFile(walletTextFile, "wallet.txt");
+document.getElementById("downloadWallet").addEventListener("click", function () {
+  downloadTextFile(walletTextFile, "wallet.txt");
+});
+
+document.getElementById("generateNew").addEventListener("click", function () {
+  location.reload();
+});

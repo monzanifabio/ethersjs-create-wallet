@@ -55,9 +55,6 @@ button img {
   padding-left: 1rem;
 }
 
-#walletAddress {
-}
-
 .address-row {
   display: flex;
 }
@@ -76,6 +73,7 @@ button img {
 
 #walletPrivateKey {
   font-family: monospace;
+  margin-bottom: 0.5rem;
 }
 
 .wallet-privatekey {

@@ -48,6 +48,7 @@ button img {
 
 .wallet-address {
   display: flex;
+  align-items: center;
   margin-bottom: 0.5rem;
 }
 .wallet-address_details {

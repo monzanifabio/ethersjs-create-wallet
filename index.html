@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create New Wallet</title>
 
-    <link rel="stylesheet" href="pico.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/pico.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <main class="container">
@@ -22,7 +22,7 @@
             <div class="address-row">
               <p id="walletAddress"></p>
               <button id="btnCopyAddress" class="btn-primary" type="button">
-                <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+                <img src="/img/clipboard-copy.svg" width="24" height="24" alt="" />
               </button>
             </div>
           </div>
@@ -31,7 +31,7 @@
         <div class="wallet-mnemonic">
           <p id="walletMnemonic"></p>
           <button id="btnCopyMnemonic" class="secondary" type="button">
-            <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+            <img src="/img/clipboard-copy.svg" width="24" height="24" alt="" />
             Copy to clipboard
           </button>
         </div>
@@ -40,20 +40,20 @@
         <div class="wallet-privatekey">
           <p id="walletPrivateKey"></p>
           <button id="btnCopyPk" class="secondary" type="button">
-            <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+            <img src="/img/clipboard-copy.svg" width="24" height="24" alt="" />
             Copy to clipboard
           </button>
         </div>
         <div class="grid">
           <div>
             <button id="downloadWallet" type="button">
-              <img src="download-file.svg" width="24" height="24" alt="" />
+              <img src="/img/download-file.svg" width="24" height="24" alt="" />
               Download txt file
             </button>
           </div>
           <div>
             <button id="generateNew" type="button" class="outline">
-              <img src="stars.svg" width="24" height="24" alt="" />
+              <img src="/img/stars.svg" width="24" height="24" alt="" />
               Generate a new wallet
             </button>
           </div>
@@ -63,13 +63,13 @@
 
     <div id="tooltip">
       <div class="tooltip-body">
-        <img src="check-circle.svg" width="24" height="24" alt="" />
+        <img src="/img/check-circle.svg" width="24" height="24" alt="" />
         <p id="tooltipBody"></p>
       </div>
     </div>
 
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-    <script src="qrcode.js"></script>
-    <script src="main.js"></script>
+    <script src="/js/qrcode.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

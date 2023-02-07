@@ -16,15 +16,41 @@
           <div id="qrcode"></div>
           <div class="wallet-address_details">
             <h2>Wallet address</h2>
-            <p id="walletAddress"></p>
+            <div class="address-row">
+              <p id="walletAddress"></p>
+              <button id="btnCopyAddress" class="btn-primary" type="button">
+                <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+              </button>
+            </div>
           </div>
         </div>
         <small>Mnemonic phrase</small>
-        <p id="walletMnemonic"></p>
+        <div class="wallet-mnemonic">
+          <p id="walletMnemonic"></p>
+          <button id="btnCopyMnemonic" type="button">
+            <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+            Copy to clipboard
+          </button>
+        </div>
+
         <small>Private key</small>
-        <p id="walletPrivateKey"></p>
+        <div class="wallet-privatekey">
+          <p id="walletPrivateKey"></p>
+          <button id="btnCopyPk" type="button">
+            <img src="clipboard-copy.svg" width="24" height="24" alt="" />
+            Copy to clipboard
+          </button>
+        </div>
       </article>
     </main>
+
+    <div id="tooltip">
+      <div class="tooltip-body">
+        <img src="check-circle.svg" width="24" height="24" alt="" />
+        <p id="tooltipBody"></p>
+      </div>
+    </div>
+
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
     <script src="qrcode.js"></script>
     <script src="main.js"></script>

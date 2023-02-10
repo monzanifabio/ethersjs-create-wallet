@@ -46,6 +46,10 @@ button img {
   border: none;
 }
 
+#btnCopyAddress {
+  flex: 1;
+}
+
 .wallet-address {
   display: flex;
   align-items: center;
@@ -57,6 +61,11 @@ button img {
 
 .address-row {
   display: flex;
+}
+
+#walletAddress {
+  flex: 8;
+  overflow-wrap: anywhere;
 }
 
 #walletMnemonic {
@@ -103,4 +112,12 @@ button img {
 
 .grid {
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
 }

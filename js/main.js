@@ -21,8 +21,8 @@ const qrcode = document.getElementById("qrcode");
 
 new QRCode(document.getElementById("qrcode"), {
   text: wallet.address,
-  width: 64,
-  height: 64,
+  width: 96,
+  height: 96,
   colorDark: "#E1E6EB",
   colorLight: "#141E26",
   correctLevel: QRCode.CorrectLevel.M,

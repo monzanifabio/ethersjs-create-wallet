@@ -47,7 +47,7 @@ button img {
 }
 
 #btnCopyAddress {
-  flex: 1;
+  max-width: max-content;
 }
 
 .wallet-address {
@@ -56,15 +56,17 @@ button img {
   margin-bottom: 0.5rem;
 }
 .wallet-address_details {
+  width: 100%;
   padding-left: 1rem;
 }
 
 .address-row {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 #walletAddress {
-  flex: 8;
   overflow-wrap: anywhere;
 }
 
